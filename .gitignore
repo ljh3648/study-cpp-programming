@@ -1,0 +1,22 @@
+# 1) 모든 파일·디렉터리 일단 무시
+*
+
+# 2) 디렉터리만 다시 추적(재귀적으로 하위도 들어감)
+!*/
+
+# 3) 확장자 있는 파일만 다시 추적
+!*.*
+
+*.yml
+*.plist
+info.plist
+/*.dSYM
+
+# .vscode
+launch.json
+tasks.json
+c_cpp_properties.json
+
+#개인정보 유출방지
+*.txt
+*.bin
