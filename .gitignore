@@ -19,6 +19,8 @@ info.plist
 launch.json
 tasks.json
 c_cpp_properties.json
+settings.json
+!/.vscode/settings.json
 
 #개인정보 유출방지
 *.txt
