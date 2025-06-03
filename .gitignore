@@ -12,6 +12,9 @@
 info.plist
 /*.dSYM
 
+# makefile
+!makefile
+
 # .vscode
 launch.json
 tasks.json
