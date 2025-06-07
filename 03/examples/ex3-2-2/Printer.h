@@ -7,7 +7,7 @@ class Printer{
 private:
 	char str[50];
 public:
-	void SetString(char *);
+	void SetString(const char *);
 	void ShowString();
 };
 
