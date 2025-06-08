@@ -20,7 +20,7 @@ private:
 	int fuelGauge;
 	int curSpeed;
 public:
-	void InitMembers(char *ID, int fule);
+	void InitMembers(const char *ID, int fule);
 	void ShowCarState();
 	void Accel();
 	void Break();

@@ -20,7 +20,7 @@ private:
 	int rank;
 
 public:
-	NameCard(char *n, char *cn, char *pn, int r) {
+	NameCard(const char *n,const char *cn,const char *pn, int r) {
 		name = new char[strlen(n) + 1];
 		strcpy(name, n);
 		company_name = new char[strlen(cn) + 1];
@@ -67,9 +67,9 @@ public:
 };
 
 int main(void) {
-	NameCard manClerk((char *)"Lee", (char *)"ABCEng", (char *)"010-1111-2222", COMP_POS::CLERK);
-	NameCard manSENIOR((char *)"Hong", (char *)"OrangeEng", (char *)"010-3333-4444", COMP_POS::SENIOR);
-	NameCard manAssist((char *)"Kim", (char *)"SoGoodComp", (char *)"010-5555-6666", COMP_POS::ASSIST);
+	NameCard manClerk("Lee", "ABCEng", "010-1111-2222", COMP_POS::CLERK);
+	NameCard manSENIOR("Hong", "OrangeEng", "010-3333-4444", COMP_POS::SENIOR);
+	NameCard manAssist("Kim", "SoGoodComp", "010-5555-6666", COMP_POS::ASSIST);
 	manClerk.ShowNameCardInfo();
 	manSENIOR.ShowNameCardInfo();
 	manAssist.ShowNameCardInfo();

@@ -19,7 +19,7 @@ class Girl {
 private:
 	char phNum[20];
 public:
-	Girl(char *num) {
+	Girl(const char *num) {
 		strcpy(phNum, num);
 	}
 	void ShowYourFriendInfo(Boy &frn);
@@ -36,7 +36,7 @@ void Girl::ShowYourFriendInfo(Boy &frn) {
 
 int main(void) {
 	Boy boy(170);
-	Girl girl((char *)"010-1234-1234");
+	Girl girl("010-1234-1234");
 	boy.ShowYourFriendInfo(girl);
 	girl.ShowYourFriendInfo(boy);
 	return 0;

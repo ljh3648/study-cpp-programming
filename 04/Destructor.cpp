@@ -7,7 +7,7 @@ private:
 	char *name;
 	int age;
 public:
-	Person(char *myname, int myage) {
+	Person(const char *myname, int myage) {
 		int len = strlen(myname) + 1;
 		name = new char[len];
 		strcpy(name, myname);
@@ -24,8 +24,8 @@ public:
 };
 
 int main(void) {
-	Person man1((char *)"Lee dong woo", 29);
-	Person man2((char *)"Jang dong gun", 41);
+	Person man1("Lee dong woo", 29);
+	Person man2("Jang dong gun", 41);
 	man1.ShowPersonInfo();
 	man2.ShowPersonInfo();
 	return 0;

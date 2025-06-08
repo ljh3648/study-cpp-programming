@@ -2,7 +2,7 @@
 #include "CarInline.h"
 
 
-void Car::InitMembers(char *ID, int fuel){
+void Car::InitMembers(const char *ID, int fuel){
 	strcpy(gamerID, ID);
 	fuelGauge = fuel;
 	curSpeed=0;
