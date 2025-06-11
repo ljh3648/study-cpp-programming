@@ -43,7 +43,7 @@ public:
 			delete pistol;
 		}
 		if(ref.pistol != NULL) {
-			pistol = new Gun(*(ref.pistol));
+			pistol = new Gun(*(ref.pistol)); // GUN의 디폴트 생성자
 		}
 		handcuffs = ref.handcuffs;
 		return *this;
