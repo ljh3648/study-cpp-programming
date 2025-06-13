@@ -59,4 +59,5 @@
         "typeinfo": "cpp",
         "ctime": "cpp"
     },
+    "C_Cpp.errorSquiggles": "disabled",
 }
