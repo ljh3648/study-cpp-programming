@@ -8,7 +8,7 @@
     "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
     "C_Cpp.vcFormat.newLine.beforeCatch": false,
     "C_Cpp.vcFormat.newLine.scopeBracesOnSeparateLines": false,    
-    "C_Cpp.vcFormat.space.pointerReferenceAlignment": "right",
+    "C_Cpp.vcFormat.space.pointerReferenceAlignment": "left",
     "files.associations": {
         "array": "cpp",
         "atomic": "cpp",
