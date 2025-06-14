@@ -1,14 +1,12 @@
-#include <iostream>
-#include <Point.h>
-using namespace std;
+#include "Point.h"
 
 Point::Point(int x, int y) : xpos(x), ypos(y) {}
 
 void Point::ShowPosition() const {
-    cout << "[" << xpos << ", " << ypos << "]" << endl;
+    std::cout << "[" << xpos << ", " << ypos << "]" << std::endl;
 }
 
-ostream& Point::operator<<(ostream &os, const Point &pos){
-	os << "[" << pos.xpos << ", " << pos.ypos << "]" << endl;
+std::ostream& operator<<(std::ostream &os, const Point &pos){
+	os << "[" << pos.xpos << ", " << pos.ypos << "]" << std::endl;
 	return os;
 }

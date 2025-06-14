@@ -8,10 +8,11 @@ private:
     T *arr;
     int arrlen;
 public:
-    BoundCheckArray(int len) {}
-    ~BoundCheckArray() {}
-    T& operator[](int idx) {}
-    T& operator[](int idx) const {}
+    BoundCheckArray(int len);
+    ~BoundCheckArray();
+    T& operator[](int idx);
+    T& operator[](int idx) const;
+    int GetArrLen() const;
 };
 
 template <typename T>
@@ -19,7 +20,8 @@ BoundCheckArray<T>::BoundCheckArray(int len) : arrlen(len) {
     arr = new T[len];
 }
 
-BoundCheckArray::~BoundCheckArray() {
+template <typename T>
+BoundCheckArray<T>::~BoundCheckArray() {
     delete[]arr;
 }
 
@@ -40,7 +42,9 @@ T& BoundCheckArray<T>::operator[](int idx) const {
     }
     return arr[idx];
 }
-int BoundCheckArray::GetArrLen() const {
+
+template <typename T>
+int BoundCheckArray<T>::GetArrLen() const {
     return arrlen;
 }
 

@@ -17,8 +17,9 @@ int main(void) {
     oarr[1] = Point(5, 6);
     oarr[2] = Point(7, 8);
 
-    for (int i = 0; i < oarr.GetArrLen(); i++)
+    for (int i = 0; i < oarr.GetArrLen(); i++) {
         cout << oarr[i];
+    }
 
     typedef Point* POINT_PTR;
     BoundCheckArray<POINT_PTR> parr(3);
@@ -26,7 +27,11 @@ int main(void) {
     parr[1] = new Point(5, 6);
     parr[2] = new Point(7, 8);
 
-    cout << *(parr[i]);
+
+    for (int i = 0; i < oarr.GetArrLen(); i++) {
+        cout << *(parr[i]);
+    }
+
 
     delete parr[0];
     delete parr[1];
